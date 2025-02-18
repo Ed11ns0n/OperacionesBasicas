@@ -27,5 +27,5 @@ def ask_the_user ():
     elif (user_decision == 2):
         subtract ()
 
-
-ask_the_user()
+while True:
+    ask_the_user()
