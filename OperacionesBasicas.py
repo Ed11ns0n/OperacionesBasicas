@@ -1,12 +1,30 @@
 #Integrantes de equipo
 #Cerrillo Cano Hugo Emmanuel (Lider de equipo)
 #Martinez Cortes Joseph Alexander
+#Domiguez Sanchez Dereck Alberto
 
 #Objetivo del programa
 #Generar un programa que realice operaciones basicas simples de dos numeros (Sumas, restas, multiplicacion y division)
 
+import math
+
 cifra_1 =0;
 cifra_2 = 0;
+
+def sqrt():
+    cifra = float(input("Dame un número para calcular su raíz cuadrada\n"))
+    if cifra < 0:
+        print("\nError: No se puede calcular la raíz cuadrada de un número negativo.")
+    else:
+        resultado = math.sqrt(cifra)
+        print("\nEl resultado de la raíz cuadrada de", cifra, "es", resultado)
+
+def power():
+    base = float(input("Dame la base\n"))
+    exponente = float(input("Dame el exponente\n"))
+    resultado = base ** exponente
+    print("\nEl resultado de", base, "elevado a la potencia", exponente, "es", resultado)
+
 
 def add ():
     cifra_1 = float (input("Dame el primer numero para sumar\n"))
@@ -35,7 +53,7 @@ def div ():
     
 
 def ask_the_user ():
-    user_decision = int (input ("Que quieres hacer (Ingresa un valor numerico): \n1.Sumar \n2.Restar \n3.Multiplicar \n4.Dividr\n"))
+    user_decision = int(input("Que quieres hacer (Ingresa un valor numerico): \n1. Sumar \n2. Restar \n3. Multiplicar \n4. Dividir \n5. Raíz cuadrada \n6. Potencia\n"))
     if (user_decision == 1):
         add ()
     elif (user_decision == 2):
@@ -44,6 +62,12 @@ def ask_the_user ():
         mul ()
     elif(user_decision == 4):
         div ()
+    elif(user_decision == 5):
+        sqrt()
+    elif(user_decision == 6):
+        power()
+
+
 
 while True:
     ask_the_user()
