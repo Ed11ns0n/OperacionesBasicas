@@ -20,12 +20,30 @@ def subtract ():
     resultado = cifra_1 - cifra_2
     print ("\nEl resultado de la resta de: ", cifra_1, "-", cifra_2, "=", resultado)
 
+def mul():
+    cifra_1 = float (input("Dame el primer numero para multiplicacion\n"))
+    cifra_2 = float (input ("Dame el segundo numero para multiplicacion\n"))
+    resultado = cifra_1 * cifra_2
+    print ("\nEl resultado de la multiplicacion de: ", cifra_1, " * ", cifra_2, "=", resultado)
+
+    
+def div ():
+    cifra_1 = float (input("Dame el primer numero para dividir\n"))
+    cifra_2 = float (input ("Dame el segundo numero para dividir \n"))
+    resultado = cifra_1 / cifra_2
+    print ("\nEl resultado de la division de: ", cifra_1, " / ", cifra_2, "=", resultado)
+    
+
 def ask_the_user ():
     user_decision = int (input ("Que quieres hacer (Ingresa un valor numerico): \n1.Sumar \n2.Restar \n3.Multiplicar \n4.Dividr\n"))
     if (user_decision == 1):
         add ()
     elif (user_decision == 2):
         subtract ()
+    elif (user_decision == 3):
+        mul ()
+    elif(user_decision == 4):
+        div ()
 
 while True:
     ask_the_user()
