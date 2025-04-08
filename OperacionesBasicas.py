@@ -1,10 +1,4 @@
-#Integrantes de equipo
-#Cerrillo Cano Hugo Emmanuel (Lider de equipo)
-#Martinez Cortes Joseph Alexander
-#Domiguez Sanchez Dereck Alberto
 
-#Objetivo del programa
-#Generar un programa que realice operaciones basicas simples de dos numeros (Sumas, restas, multiplicacion y division)
 
 import math
 
