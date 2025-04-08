@@ -4,6 +4,7 @@ import math
 
 cifra_1 =0;
 cifra_2 = 0;
+cifra_3 = 0;
 
 def sqrt():
     cifra = float(input("Dame un número para calcular su raíz cuadrada\n"))
@@ -23,27 +24,31 @@ def power():
 def add ():
     cifra_1 = float (input("Dame el primer numero para sumar\n"))
     cifra_2 = float (input ("Dame el segundo numero para sumar \n"))
-    resultado = cifra_1 + cifra_2
-    print ("\nEl resultado de la suma de: ", cifra_1, "+", cifra_2, "=", resultado)
+    cifra_3 = float (input ("Dame el tercer numero para sumar \n"))
+    resultado = cifra_1 + cifra_2 + cifra_3
+    print ("\nEl resultado de la suma de: ", cifra_1, "+", cifra_2, "+", cifra_3, "=", resultado)
 
 def subtract ():
     cifra_1 = float (input("Dame el primer numero para restar\n"))
     cifra_2 = float (input ("Dame el segundo numero para restar \n"))
-    resultado = cifra_1 - cifra_2
-    print ("\nEl resultado de la resta de: ", cifra_1, "-", cifra_2, "=", resultado)
+    cifra_3 = float (input ("Dame el tercer numero para restar \n"))
+    resultado = cifra_1 - cifra_2 - cifra_3
+    print ("\nEl resultado de la resta de: ", cifra_1, "-", cifra_2, "-", cifra_3, "=", resultado)
 
 def mul():
     cifra_1 = float (input("Dame el primer numero para multiplicacion\n"))
     cifra_2 = float (input ("Dame el segundo numero para multiplicacion\n"))
-    resultado = cifra_1 * cifra_2
-    print ("\nEl resultado de la multiplicacion de: ", cifra_1, " * ", cifra_2, "=", resultado)
+    cifra_3 = float (input ("Dame el tercer numero para multiplicacion\n"))
+    resultado = cifra_1 * cifra_2 * cifra_3
+    print ("\nEl resultado de la multiplicacion de: ", cifra_1, " * ", cifra_2, "*", cifra_3, "=", resultado)
 
     
 def div ():
     cifra_1 = float (input("Dame el primer numero para dividir\n"))
     cifra_2 = float (input ("Dame el segundo numero para dividir \n"))
+    cifra_3 = float (input ("Dame el tercer numero para dividir \n"))
     resultado = cifra_1 / cifra_2
-    print ("\nEl resultado de la division de: ", cifra_1, " / ", cifra_2, "=", resultado)
+    print ("\nEl resultado de la division de: ", cifra_1, " / ", cifra_2, "/", cifra_3, "=", resultado)
     
 
 def ask_the_user ():
